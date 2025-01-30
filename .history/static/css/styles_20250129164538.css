@@ -1,0 +1,255 @@
+html, body {
+    height: 100%;  
+    margin: 0;     
+    color: white;
+}
+
+header {
+    position: fixed; /* Position the header to always be at the top */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background: #353839;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 10px;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #ffcc00; 
+}
+
+main {
+    position: fixed; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 100%;
+}
+
+main .picture {
+    background-color:#0e1111;
+    height: 100%;
+    width: 40%;
+}
+
+.picture img {
+    margin-top: 50px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color:#efe9e2;
+}
+
+.picture .pictureText {
+    text-align: center;
+    transform: translateY(100%); 
+    opacity: 0; 
+    animation: slideInFromBottom 1s ease-in-out forwards; 
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+.information {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.information img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid;
+    border-color: white;
+}
+
+.information img:hover {
+    opacity:1.0;
+}
+
+main .middlebar hr {
+    width: 100%;
+    color: white
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+main .middlebar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: #3b444b;
+    height: 100%;
+    width: 70%;
+    overflow-y: auto;
+    background-image: url("../static/imgs/background/mainbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: appear 1s forwards;
+}
+
+main .middlebar h2 {
+    margin-left: 20px;
+    text-align: left;
+    align-self: flex-start;
+}
+
+main .middlebar .technologies {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+main .middlebar .technologies div {
+    display: flex;              
+    align-items: center;       
+    margin-bottom: 10px;         
+}
+
+main .middlebar .technologies p {
+    margin-top: 1px; 
+    width: 25%;
+    display: inline-block;
+}
+
+main .middlebar .technologies img {
+    margin-top: -10px;
+    margin-left: 20px; 
+    width: 40px; 
+    height: 40px;
+    display: inline-block;
+}
+
+main .middlebar .technologies img {
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+main .middlebar .technologies img:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+main .middlebar .technologies p {
+    transition: color 0.3s ease-in-out;
+}
+
+main .middlebar .technologies div:hover p {
+    color: #ffcc00; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: attr(data-alt); 
+    position: absolute;
+    top: -35px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.highlight {
+    color: #ffcc00; 
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.thirdbar {
+    display: flex;
+    flex-direction: column;
+    background: #0e1111;
+    width: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.thirdbar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    background: #3b444b;
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+}
+
+.thirdbar div:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+.thirdbar div h2 {
+    text-align: center;
+}
+
+

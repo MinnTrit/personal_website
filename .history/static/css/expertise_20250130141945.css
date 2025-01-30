@@ -1,0 +1,41 @@
+main .expertises {
+    display: flex;
+    flex-direction: row;
+    background: #0e1111;
+    border: 5px solid grey;
+    padding: 20px; 
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.expertises div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b444b;
+    border: 1px solid white;
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+main .expertises div:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+main .expertises div h2 {
+    text-align: center;
+}
+
+main .expertises div a {
+    text-decoration: none;
+}
+
+main .expertises div a:focus, 
+main .expertises div a:active {
+    outline: none; 
+}

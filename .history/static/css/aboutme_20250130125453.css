@@ -1,0 +1,71 @@
+main .aboutMe {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.aboutMe .picture {
+    display: flex;
+    flex-direction: column;
+    background-color:#0e1111;
+    height: 100%;
+    width: 40px;
+    min-width: 300px;
+}
+
+/* The key frames used for appearing the button*/
+@keyframes appearButton {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%; 
+    }
+    
+}
+
+.aboutMe .picture .resume button {
+    margin-top: 40px;
+    display: block;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3b444b; 
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none; 
+    cursor: pointer; 
+    animation: appearButton 2.5s;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.aboutMe .picture .resume button:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    background-color: #3b444b; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: #fff; 
+}
+
+.aboutMe .picture img {
+    margin-top: 50px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color:#efe9e2;
+}
+
+.aboutMe .picture .pictureText {
+    text-align: center;
+    transform: translateY(100%); 
+    opacity: 0; 
+    animation: slideInPictureText 1s ease-out forwards; 
+}

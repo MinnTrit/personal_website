@@ -1,0 +1,28 @@
+.picture img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: black;
+}
+
+.picture {
+    background-color: red;
+    width: 30%;
+}
+
+.picture h2 {
+    width: 50%; 
+    margin-left: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.picture p {
+    width: 50%; 
+    margin-left: 100px;
+    display: inline-block;
+    text-align: center;
+}

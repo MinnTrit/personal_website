@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/leftbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/technologies.css') }}">
+    <title>Data Engineer - Hoang Minh Triet</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="">About</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="aboutMe">
+            <div class="introduction">
+                <img src="{{ url_for('static', filename='imgs/personal_image.jpg') }}" alt="personalImage">
+                <div class="information">
+                    <a href="https://www.facebook.com/minhtriet05042003/" target="_blank">
+                        <img class="facebook" src="{{ url_for('static', filename='imgs/facebook.jpg') }}" alt="facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/in/minchit0504/" target="_blank">
+                        <img class="linkedin" src="{{ url_for('static', filename='imgs/linkedin-logo.png') }}" alt="linkedin">
+                    </a>
+                    <a href="https://www.github.com/MinnTrit" target="_blank">
+                        <img class="github" src="{{ url_for('static', filename='imgs/github.png') }}" alt="github">
+                    </a>
+                </div>
+                <div class="leftbarText">
+                    <h2>Hoang Minh Triet</h2>
+                    <h4>Data Analyst</h4>
+                    <p>A <em>Junior Data Analyst</em>, specalized in E-commerce industry, with 1 year of hands-on experiences in both Analytics and Engineering to work with various internal and external stakeholders within the outsource environment.</p>
+                </div>
+                <div class="resume">
+                    <a href="https://drive.google.com/file/d/1e6SmtK9mVWKZFXu4DqSFzOd-bx1GnPwF/view?usp=sharing" target="_blank">
+                        <button>Resume</button>
+                    </a>
+                </div>
+            </div>
+            <!-- <style>
+                main .middlebar {
+                    background: linear-gradient(rgba(59, 68, 75, 0.8), rgba(59, 68, 75, 0.8)), 
+                    url("../static/imgs/background/mainbackground.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    background-blend-mode: multiply;
+                }
+            </style> -->
+        </div>
+        <div class="highlights">
+            <div>
+                <h2><span class="highlight">1 year</span> experience</h2>
+            </div>
+
+            <div>
+                <h2>High specialization in <span class="highlight">Ecommerce</span></h2>
+            </div>
+
+            <div>
+                <h2>Advanced in <span class="highlight">Analytics & Engineering</span></h2>
+            </div>
+
+            <div>
+                <h2><span class="highlight">+20</span> hands-on data projects</h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

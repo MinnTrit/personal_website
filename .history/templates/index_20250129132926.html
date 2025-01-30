@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Data Engineer - Hoang Minh Triet</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="">About</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="picture">
+            <img src="{{ url_for('static', filename='imgs/personal_image.jpg') }}" alt="personalImage">
+            <div class="information">
+                <a href="https://www.facebook.com/minhtriet05042003/" target="_blank">
+                    <img class="facebook" src="{{ url_for('static', filename='imgs/facebook.jpg') }}" alt="facebook">
+                </a>
+                <a href="https://www.linkedin.com/in/minchit0504/" target="_blank">
+                    <img class="linkedin" src="{{ url_for('static', filename='imgs/linkedin-logo.png') }}" alt="linkedin">
+                </a>
+                <a href="https://www.github.com/MinnTrit" target="_blank">
+                    <img class="github" src="{{ url_for('static', filename='imgs/github.png') }}" alt="github">
+                </a>
+            </div>
+            <div class="pictureText">
+                <h2>Hoang Minh Triet</h2>
+                <h4>Data Analyst</h4>
+                <p>A <em>Junior Data Analyst</em>, specalized in E-commerce industry, with 1 year of hands-on experiences in both Analytics and Engineering to work with various internal and external stakeholders within the outsource environment.</p>
+            </div>
+        </div>
+        <div class="rightbar">
+            <h2>My stack and technologies</h2>
+            <div class="technologies">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

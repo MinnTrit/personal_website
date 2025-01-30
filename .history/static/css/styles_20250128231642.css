@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;  
+    margin: 0;     
+}
+
+.picture {
+    background-color: #f36767;
+    width: 30%;
+    height: 100%;
+}
+
+.picture img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color:#efe9e2;
+}
+
+.picture h2, .picture h4, .picture p{
+    text-align: center;
+}
+
+.sections {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:#887a7a;
+    width: 70%;
+    height: 100%;
+}
+
+.aboutMe {
+    position: absolute;
+    right: 0px;
+}
+
+.experiences {
+    position: absolute;
+    right: 200px;
+}
+
+.projects {
+    position: absolute;
+    right: 400px;
+}
+
+.contact {
+    position: absolute;
+    right: 600px;
+}
+
+.information .facebook {
+    border-radius: 50%; 
+}

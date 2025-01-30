@@ -1,0 +1,106 @@
+main .introduction {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background-color:#0e1111;
+}
+
+.introduction hr {
+    width: 100%;
+    color: white
+}
+
+/* The key frames used for appearing the button*/
+@keyframes appearButton {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%; 
+    }
+    
+}
+
+.introduction .resume button {
+    margin-top: 40px;
+    display: block;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3b444b; 
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none; 
+    cursor: pointer; 
+    animation: appearButton 2.5s;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.introduction  .resume button:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    background-color: #3b444b; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: #fff; 
+}
+
+.introduction  img {
+    margin-top: 50px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color:#efe9e2;
+}
+
+/* Used to slide in the picture text */
+@keyframes slideInPictureText {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%); 
+        opacity: 1;
+    }
+}
+
+.introduction  Text {
+    text-align: center;
+    transform: translateY(100%); 
+    opacity: 0; 
+    animation: slideInPictureText 1s ease-out forwards; 
+}
+
+
+/* Sytling the information div */
+.introduction .information {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.introduction .information img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid;
+    border-color: white;
+}
+
+/* Adding the hover affect for the picture */
+.introduction .information img:hover {
+    transform: scale(1.2);
+    opacity:1.0;
+}

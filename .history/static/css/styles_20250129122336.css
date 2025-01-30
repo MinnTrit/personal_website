@@ -1,0 +1,108 @@
+header {
+    position: fixed; /* Position the header to always be at the top */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background: yellowgreen;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+main {
+    margin-top: 30px;
+}
+
+header .navbar {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #00abf0
+}
+
+html, body {
+    height: 100%;  
+    margin: 0;     
+    color: white;
+}
+
+.picture {
+    background-color:#0e1111;
+    width: 30%;
+    height: 100%;
+}
+
+.picture img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color:#efe9e2;
+}
+
+.picture .pictureText {
+    text-align: center;
+    transform: translateY(100%); 
+    opacity: 0; 
+    animation: slideInFromBottom 1s ease-in-out forwards; 
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+
+.sections {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:#3b444b;
+    width: 70%;
+    height: 100%;
+    gap: 50px;
+}
+
+.sections .h2 {
+    display: inline-block;
+}
+
+.information {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.information img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid;
+    border-color: white;
+}
+
+.information img:hover {
+    opacity:1.0;
+}

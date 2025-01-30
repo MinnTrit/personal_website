@@ -1,0 +1,15 @@
+main .aboutMe {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.aboutMe .picture {
+    display: flex;
+    flex-direction: column;
+    background-color:#0e1111;
+    height: 100%;
+    width: 40px;
+    min-width: 300px;
+}

@@ -1,0 +1,111 @@
+/* @keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.aboutMe .middlebar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: #3b444b;
+    height: 100%;
+    width: 70%;
+    background-size: cover;
+    background-position: center;
+    animation: appear 1s forwards;
+}
+
+.aboutMe .middlebar h2 {
+    margin-left: 20px;
+    align-self: center;
+}
+
+.aboutMe .middlebar .technologies {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-start;
+}
+
+.aboutMe .middlebar .technologies div {
+    display: flex;              
+    align-items: center;       
+    margin-bottom: 8px;         
+}
+
+.aboutMe .middlebar .technologies p {
+    margin-top: 1px; 
+    width: 30%;
+    display: inline-block;
+}
+
+.aboutMe .middlebar .technologies img {
+    margin-top: -10px;
+    margin-left: 20px; 
+    width: 40px; 
+    height: 40px;
+    display: inline-block;
+    border: 3px solid grey;
+    border-radius: 5px;
+    filter: contrast(150%);
+    background-color: white;
+    padding: 3px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.aboutMe .middlebar .technologies img {
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.aboutMe .middlebar .technologies img:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+.aboutMe .middlebar .technologies p {
+    transition: color 0.3s ease-in-out;
+}
+
+.aboutMe .middlebar .technologies div:hover p {
+    color: #ffcc00; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: attr(data-alt); 
+    position: absolute;
+    top: -35px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.highlight {
+    color: #ffcc00; 
+} */

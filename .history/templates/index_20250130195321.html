@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/introduction.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/technologies.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/expertise.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+    <title>Data Engineer - Hoang Minh Triet</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="about" href="#aboutMe">About</a>
+            <a class="skills" href="#">Skills</a>
+            <a class="projects" href="#personalProjects">Projects</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div id="aboutMe" class="introduction">
+            <img src="{{ url_for('static', filename='imgs/personal_image.jpg') }}" alt="personalImage">
+            <div class="information">
+                <a href="https://www.facebook.com/minhtriet05042003/" target="_blank">
+                    <img class="facebook" src="{{ url_for('static', filename='imgs/facebook.jpg') }}" alt="facebook">
+                </a>
+                <a href="https://www.linkedin.com/in/minchit0504/" target="_blank">
+                    <img class="linkedin" src="{{ url_for('static', filename='imgs/linkedin-logo.png') }}" alt="linkedin">
+                </a>
+                <a href="https://www.github.com/MinnTrit" target="_blank">
+                    <img class="github" src="{{ url_for('static', filename='imgs/github.png') }}" alt="github">
+                </a>
+                <a href="https://drive.google.com/file/d/1e6SmtK9mVWKZFXu4DqSFzOd-bx1GnPwF/view?usp=sharing" target="_blank">
+                    <img class="github" src="{{ url_for('static', filename='imgs/resume.png') }}" alt="resume">
+                </a>
+            </div>
+            <div class="introductionText">
+                <h1>Hoang Minh Triet</h1>
+                <h2>Data Analyst</h2>
+                <div class="textParagraph">
+                    <div class=careerOverview>
+                        <h2>Career Overview</h2>
+                        <p>A <em>Junior Data Analyst</em> specalized in E-commerce industry, with 1 year of hands-on experiences in both Analytics and Engineering to work with various internal and external stakeholders within the outsource environment.</p>
+                    </div>
+                    <div class="educationalBackground">
+                        <h2>Educational Background</h2>
+                        <p>A fresh-graduated, well-performance business student majoring in international trade of Rouen University from France, finding himself having major passion working with data and learning about technologies, has always been in his best motivation to drive the business with data-driven making decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <style>
+                main .middlebar {
+                    background: linear-gradient(rgba(59, 68, 75, 0.8), rgba(59, 68, 75, 0.8)), 
+                    url("../static/imgs/background/mainbackground.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    background-blend-mode: multiply;
+                }
+            </style> -->
+        </div>
+
+        <div class="highlights">
+            <h2>My expertise</h2>
+            <div class="expertise">
+                <div>
+                    <h2><span class="highlight">1 year</span> experience</h2>
+                </div>
+
+                <div>
+                    <h2>High specialization in <span class="highlight">Ecommerce</span></h2>
+                </div>
+
+                <div>
+                    <h2>Advanced in <span class="highlight">Analytics & Engineering</span></h2>
+                </div>
+
+                <div>
+                    <h2><span class="highlight">+20</span> hands-on data projects</h2>
+                </div>
+            </div>
+        </div> 
+
+        <div class="technicalKnowledge">
+            <div id="skillSections" class="technicalBox">
+                <div class="technicalText">
+                    <h2>My technical knowledge</h2>
+                </div>
+                <div class="technologies">
+                    <div>
+                        <p>Programming Languages</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Python">
+                                <img src="{{ url_for('static', filename='imgs/python.png') }}" alt="python">
+                            </div>
+                            <div class="tooltip" data-alt="Java">
+                                <img src="{{ url_for('static', filename='imgs/java.png') }}" alt="java">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>Databases</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="MySQL">
+                                <img src="{{ url_for('static', filename='imgs/mysql.png') }}" alt="mysql">
+                            </div>
+                            <div class="tooltip" data-alt="SQL Server">
+                                <img src="{{ url_for('static', filename='imgs/sql-server.png') }}" alt="sql-server">
+                            </div>
+                            <div class="tooltip" data-alt="Oracle">
+                                <img src="{{ url_for('static', filename='imgs/oracle.png') }}" alt="oracle">
+                            </div>
+                            <div class="tooltip" data-alt="MongoDB">
+                                <img src="{{ url_for('static', filename='imgs/mongodb.png') }}" alt="mongodb">
+                            </div>
+                            <div class="tooltip" data-alt="PostgreSQL">
+                                <img src="{{ url_for('static', filename='imgs/postgresql.png') }}" alt="postgresql">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Back-End</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Redis">
+                                <img src="{{ url_for('static', filename='imgs/redis.png') }}" alt="redis">
+                            </div>
+                            <div class="tooltip" data-alt="Django">
+                                <img src="{{ url_for('static', filename='imgs/django.png') }}" alt="django">
+                            </div>
+                            <div class="tooltip" data-alt="Flask">
+                                <img src="{{ url_for('static', filename='imgs/flask.png') }}" alt="flask">
+                            </div>
+                            <div class="tooltip" data-alt="Celery">
+                                <img src="{{ url_for('static', filename='imgs/celery.png') }}" alt="celery">
+                            </div>
+                            <div class="tooltip" data-alt="FastAPI">
+                                <img src="{{ url_for('static', filename='imgs/fastapi.png') }}" alt="fastapi">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Big Data</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Databricks">
+                                <img src="{{ url_for('static', filename='imgs/databricks.png') }}" alt="databricks">
+                            </div>
+                            <div class="tooltip" data-alt="Spark">
+                                <img src="{{ url_for('static', filename='imgs/spark.png') }}" alt="spark">
+                            </div>
+                            <div class="tooltip" data-alt="Kafka">
+                                <img src="{{ url_for('static', filename='imgs/kafka.png') }}" alt="kafka">
+                            </div>
+                            <div class="tooltip" data-alt="Hadoop">
+                                <img src="{{ url_for('static', filename='imgs/hadoop.png') }}" alt="hadoop">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Event Streaming</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Kafka">
+                                <img src="{{ url_for('static', filename='imgs/kafka.png') }}" alt="kafka">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Jobs Scheduler</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Celery">
+                                <img src="{{ url_for('static', filename='imgs/celery.png') }}" alt="celery">
+                            </div>
+                            <div class="tooltip" data-alt="Redbeat Scheduler">
+                                <img src="{{ url_for('static', filename='imgs/redbeatscheduler.png') }}" alt="redbeatscheduler">
+                            </div>
+                            <div class="tooltip" data-alt="Cron Jobs">
+                                <img src="{{ url_for('static', filename='imgs/cronjobs.png') }}" alt="cronjobs">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Cloud & DevOps</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Oracle Cloud">
+                                <img src="{{ url_for('static', filename='imgs/oracle.png') }}" alt="oracle">
+                            </div>
+                            <div class="tooltip" data-alt="Jenkins">
+                                <img src="{{ url_for('static', filename='imgs/jenkins.png') }}" alt="jenkins">
+                            </div>
+                            <div class="tooltip" data-alt="GitHub Actions">
+                                <img src="{{ url_for('static', filename='imgs/github.png') }}" alt="github">
+                            </div>
+                            <div class="tooltip" data-alt="SonarQube">
+                                <img src="{{ url_for('static', filename='imgs/sonarqube.png') }}" alt="sonarqube">
+                            </div>
+                            <div class="tooltip" data-alt="Kubernetes">
+                                <img src="{{ url_for('static', filename='imgs/kubernetes.png') }}" alt="kubernetes">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Business Intelligence</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Power BI">
+                                <img src="{{ url_for('static', filename='imgs/powerbi.png') }}" alt="powerbi">
+                            </div>
+                            <div class="tooltip" data-alt="Grafana">
+                                <img src="{{ url_for('static', filename='imgs/grafana.png') }}" alt="grafana">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Operating System</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Linux">
+                                <img src="{{ url_for('static', filename='imgs/linux.png') }}" alt="linux">
+                            </div>
+                            <div class="tooltip" data-alt="Ubuntu">
+                                <img src="{{ url_for('static', filename='imgs/ubuntu.png') }}" alt="ubuntu">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p>Spreadsheet</p>
+                        <div class="technologiesImage">
+                            <div class="tooltip" data-alt="Excel">
+                                <img src="{{ url_for('static', filename='imgs/excel.png') }}" alt="excel">
+                            </div>
+                            <div class="tooltip" data-alt="Spreadsheet">
+                                <img src="{{ url_for('static', filename='imgs/spreadsheet.png') }}" alt="spreadsheet">             
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div id="personalProjects" class="projects">
+            <div class="engineerProjects">
+                <div class="projectsText">
+                    <h2>Engineering Projects</h2>
+                </div>
+                <div class="projectBoxes">
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://github.com/MinnTrit/accenture_project" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/accenture.png') }}" alt="Accenture project">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Accenture project</p>
+                        </div>
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://github.com/MinnTrit/reckitt_benckiser_project" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/reckittbenckiser.png') }}" alt="Reckitt Benckiser Project">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Reckitt Benckiser project</p>
+                        </div>
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://github.com/MinnTrit/django_auto_download" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/lazada.png') }}" alt="Lazada Brand Portal Project">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Lazada Brand Portal Reports Automation</p>
+                        </div>                       
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://github.com/MinnTrit/carrefour_java_scrapper" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/carrefour.png') }}" alt="Carrefour Project">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Carrefour Data Model</p>
+                        </div>   
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://github.com/MinnTrit/carrefour_java_scrapper" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/carrefour.png') }}" alt="Carrefour Project">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Indeed Realtime Data Collection</p>
+                        </div>                         
+                    </div>
+                    <div class="projectBox">
+                        
+                    </div>
+                    <div class="projectBox">
+                        
+                    </div>
+                    <div class="projectBox">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualizationProjects">
+                <div class="projectsText">
+                    <h2>Visualization projects</h2>
+                </div>
+                <div class="projectBoxes">
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNGMyMzQzMDgtNDBlNS00N2JmLTkzYmEtMzUyNjkyYTNiMTk5IiwidCI6ImFmMWYzNzUzLTM5MjUtNGU2Zi05NDliLTk3YzAwNzMyMDgwMyIsImMiOjEwfQ%3D%3D" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/seoanalysis.png') }}" alt="SEO Analysis dashboard">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>SEO analysis</p>
+                        </div>
+
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiOTA2ODQ3NWUtMGIzMS00ZWFhLWIxYzMtOTc3MWIzNGViNmVjIiwidCI6ImFmMWYzNzUzLTM5MjUtNGU2Zi05NDliLTk3YzAwNzMyMDgwMyIsImMiOjEwfQ%3D%3D" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/bankanalysis.png') }}" alt="SEO Analysis dashboard">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Bank analysis</p>
+                        </div>
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiMGU5MDNiYWMtNjAzZS00YzY0LTllYmMtZDZmMDRlMTQyZjkxIiwidCI6ImFmMWYzNzUzLTM5MjUtNGU2Zi05NDliLTk3YzAwNzMyMDgwMyIsImMiOjEwfQ%3D%3D" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/bankanalysis2.png') }}" alt="Income statement dashboard">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Income statement dashboard</p>
+                        </div>
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNGM4YjYxYTEtNzhkNi00YmJmLTljMTAtMDFhNWMwYmEyYmJjIiwidCI6ImFmMWYzNzUzLTM5MjUtNGU2Zi05NDliLTk3YzAwNzMyMDgwMyIsImMiOjEwfQ%3D%3D" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/ecommerceanalysis.png') }}" alt="Ecommerce analysis dashboard">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>Ecommerce Analysis</p>
+                        </div>
+                    </div>
+                    <div class="projectBox">
+                        <div class="projectImage">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiYzdhMGFjMWEtMGM5Mi00ZGE4LWI3ODUtZjk5ZjhlZmEzMGIxIiwidCI6ImFmMWYzNzUzLTM5MjUtNGU2Zi05NDliLTk3YzAwNzMyMDgwMyIsImMiOjEwfQ%3D%3D" target="_blank">
+                                <img src="{{ url_for('static', filename='imgs/projects/rfmanalysis.png') }}" alt="RFM analysis dashboard">
+                            </a>
+                        </div>
+                        <div class="projectName">
+                            <p>RFM analysis</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    </main>
+    <script>
+        document.querySelector(".skills").addEventListener('click', function() {
+            const target = document.querySelector("#skillSections");
+            target.scrollIntoView({
+                behavior: "smooth",
+                target: "start"
+            });
+        });
+    </script>
+</body>
+</html>

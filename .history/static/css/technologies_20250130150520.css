@@ -1,0 +1,117 @@
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.technicalknowledge {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    animation: appear 1s forwards;
+}
+
+.technicalknowledge .technicalText h2 {
+    margin-left: 20px;
+    align-self: center;
+}
+
+.technicalknowledge .technologies {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: flex-start;
+    border: 1px solid #3b444b;
+    border-radius: 10px;
+}
+
+.technicalknowledge .technologies div {
+    width: 100%;
+    display: flex;              
+    align-items: flex-start;   
+    flex-direction: row;    
+    margin-top: 20px;
+    margin-bottom: 8px;
+    gap: 20px;     
+}
+
+.technicalknowledge .technologies div div {
+    width: 40px;
+    height: 40px;
+}
+
+.technicalknowledge .technologies p {
+    margin-top: 1px; 
+    width: 30%;
+    display: inline-block;
+}
+
+.technicalknowledge .technologies img {
+    margin-top: -10px;
+    margin-left: 20px; 
+    width: 40px; 
+    height: 40px;
+    display: inline-block;
+    border: 3px solid grey;
+    border-radius: 5px;
+    filter: contrast(150%);
+    background-color: white;
+    padding: 3px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.technicalknowledge .technologies img {
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.technicalknowledge .technologies img:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+}
+
+.technicalknowledge .technologies p {
+    transition: color 0.3s ease-in-out;
+}
+
+.technicalknowledge .technologies div:hover p {
+    color: #ffcc00; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip::after {
+    content: attr(data-alt); 
+    position: absolute;
+    top: -35px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.highlight {
+    color: #ffcc00; 
+}

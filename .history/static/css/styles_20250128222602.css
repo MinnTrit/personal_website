@@ -1,0 +1,26 @@
+.picture img {
+    display: inline-block;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: black;
+}
+
+.picture {
+    background-color: red;
+}
+
+.picture h2 {
+    text-align: center;
+}
+
+.picture p {
+    width: 50%; 
+    margin-left: 100px;
+    display: inline-block;
+    text-align: center;
+}

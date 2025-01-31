@@ -449,18 +449,19 @@
     <script>
         // Get all anchor links inside the navbar
         const navLinks = document.querySelectorAll('.navbar a');
-    
+
         // Add click event listeners to all the links
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault(); // Prevent default anchor behavior
-    
+
                 // Get the target element's ID from the href attribute
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-    
-                // Smoothly scroll to the target element
-                targetElement.scrollIntoView({
+
+                // Smoothly scroll to the target element with a slight offset (if needed)
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,  // Adjust this value if needed
                     behavior: 'smooth'
                 });
             });

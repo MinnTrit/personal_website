@@ -1,4 +1,4 @@
-html {
+* {
     scroll-behavior: smooth;
 }
 
@@ -14,7 +14,7 @@ html, body {
 }
 
 @media (max-width: 400px) {
-    html {
+    * {
         scroll-behavior: smooth;
     }
 

@@ -14,6 +14,21 @@ main .introduction {
     flex-direction: row;
 }
 
+@media (max-width: 400px) {
+    .introductionImage {
+        flex-direction: column;
+        align-items: center; /* Center images */
+        justify-content: center;
+    }
+    
+    .book, .myself, .pencil {
+        width: 60%; 
+        max-width: 100px; 
+        height: auto; 
+        margin: 10px auto; 
+    }
+}
+
 /* The key frames used for appearing the button*/
 @keyframes appearButton {
     0% {
@@ -47,7 +62,7 @@ main .introduction {
 
 .introduction .myself {
     margin-top: 50px;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
@@ -60,6 +75,7 @@ main .introduction {
 }
 
 .introduction .book {
+    display: flex;
     margin-top: 50px;
     margin-left: 300px;
     width: 200px;
@@ -69,6 +85,7 @@ main .introduction {
 }
 
 .introduction .pencil {
+    display: flex;
     margin-top: 50px;
     margin-right: 300px;
     width: 200px;
@@ -125,6 +142,24 @@ main .introduction {
     width: 50%;
     border: 3px solid #0e1111;
     border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+    .textParagraph {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;    
+        justify-content: center;
+        gap: 10px;             
+    }
+    .careerOverview,
+    .educationalBackground {
+        width: 90%;      
+        font-size: 8px;      
+    }
+    .textDetails {
+        height: auto;        
+    }
 }
 
 /* Sytling the information div */

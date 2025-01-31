@@ -36,46 +36,42 @@ main .technicalKnowledge {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 10px;
     justify-content: space-evenly;
     border: 5px solid #0e1111;
-    padding-top: 20px;
     border-radius: 10px;
+    padding-top: 5px;
 }
 
-.technicalBox .technologies div {
+.technicalBox .technologies > div {
     width: 100%;
-    display: flex;              
-    align-items: center;   
-    flex-direction: row;    
-    margin-bottom: 8px;
-    gap: 20px;     
-}
-
-/*Adjust the the div of the image*/
-.technicalBox .technologies .technologiesImage div {
-    width: 40px;
-    height: 40px;
-}
-
-.technicalBox .technologies p {
-    margin-top: 1px; 
-    width: 30%;
-    margin-left: 20px;
-    display: inline-block;
-}
-
-.technicalBox .technologies .technologiesImage {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px
 }
 
-.technicalBox .technologies img {
-    margin-top: -10px;
-    margin-left: 20px; 
+.technologiesText {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 30%;
+    max-width: 50%;
+}
+
+.technologiesImage {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.technicalBox .technologies .technologiesImage img {
     width: 40px; 
     height: 40px;
-    display: inline-block;
     border: 3px solid grey;
     border-radius: 5px;
     filter: contrast(150%);
@@ -102,11 +98,6 @@ main .technicalKnowledge {
     color: #87A299; 
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
 .tooltip::after {
     content: attr(data-alt); 
     position: absolute;
@@ -127,4 +118,35 @@ main .technicalKnowledge {
 .tooltip:hover::after {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 400px) {
+    .technicalBox {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .technologies {
+        width: 100%;
+        gap: 1px;
+    }
+
+    .technicalBox .technologies > div {
+        width: 100%;
+        display: flex;              
+        align-items: center;   
+        flex-direction: column; 
+        gap: 1px;      
+    }
+
+    .technologiesText {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }

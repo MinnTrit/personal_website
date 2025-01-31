@@ -53,3 +53,21 @@ main .highlights {
 .highlight {
     color: #f1abb9; 
 }
+
+@media (max-width: 400px) {
+    .expertise  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px
+    }
+    .expertise div {
+        width: auto;
+        height: auto;
+    }
+    .expertise div h2 {
+        font-size: 12px;
+    }
+}
+

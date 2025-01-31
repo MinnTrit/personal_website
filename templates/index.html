@@ -18,10 +18,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="about" href="#aboutMe">About</a>
-            <a class="skills" href="#skillSections">Skills</a>
-            <a class="projects" href="#personalProjects">Projects</a>
-            <a class="contact" href="#contact">Contact</a>
+            <div class="nav-item"><a class="about" href="#aboutMe">About</a></div>
+            <div class="nav-item"><a class="skills" href="#skillSections">Skills</a></div>
+            <div class="nav-item"><a class="projects" href="#personalProjects">Projects</a></div>
+            <div class="nav-item"><a class="contact" href="#contact">Contact</a></div>
         </nav>
     </header>
     <main>
@@ -52,12 +52,20 @@
                 </div>
                 <div class="textParagraph">
                     <div class=careerOverview>
-                        <h2>Career Overview</h2>
-                        <p>A <em>Junior Data Analyst</em> specalized in E-commerce industry, with 1 year of hands-on experiences in both Analytics and Engineering to work with various internal and external stakeholders within the outsource environment.</p>
+                        <div class="textOverview">
+                            <h2>Career Overview</h2>
+                        </div>
+                        <div class="textDetails">
+                            <p>A <em>Junior Data Analyst</em> specalized in E-commerce industry, with 1 year of hands-on experiences in both Analytics and Engineering to work with various internal and external stakeholders within the outsource environment.</p>
+                        </div>
                     </div>
                     <div class="educationalBackground">
-                        <h2>Educational Background</h2>
-                        <p>A fresh-graduated, well-performance business student majoring in international trade of Rouen University from France, finding himself having major passion working with data and learning about technologies, has always been in his best motivation to drive the business with data-driven making decisions.</p>
+                        <div class="textOverview">
+                            <h2>Educational Background</h2>
+                        </div>
+                        <div class="textDetails">
+                            <p>A fresh-graduated, well-performance business student majoring in international trade of Rouen University from France, finding himself having major passion working with data and learning about technologies, has always been in his best motivation to drive the business with data-driven making decisions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,11 +104,12 @@
         <div class="technicalKnowledge">
             <div id="skillSections" class="technicalBox">
                 <div class="technicalText">
-                    <h2>My technical knowledge</h2>
-                </div>
+                    <h2>My technical knowledge</h2></div>
                 <div class="technologies">
-                    <div>
-                        <p>Programming Languages</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Programming Languages</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Python">
                                 <img src="{{ url_for('static', filename='imgs/python.png') }}" alt="python">
@@ -111,8 +120,10 @@
                         </div>
                     </div>
     
-                    <div>
-                        <p>Databases</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Databases</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="MySQL">
                                 <img src="{{ url_for('static', filename='imgs/mysql.png') }}" alt="mysql">
@@ -132,8 +143,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Back-End</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Back-End</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Redis">
                                 <img src="{{ url_for('static', filename='imgs/redis.png') }}" alt="redis">
@@ -153,8 +166,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Big Data</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Big Data</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Databricks">
                                 <img src="{{ url_for('static', filename='imgs/databricks.png') }}" alt="databricks">
@@ -171,8 +186,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Event Streaming</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Event Streaming</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Kafka">
                                 <img src="{{ url_for('static', filename='imgs/kafka.png') }}" alt="kafka">
@@ -180,8 +197,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Jobs Scheduler</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Jobs Scheduler</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Celery">
                                 <img src="{{ url_for('static', filename='imgs/celery.png') }}" alt="celery">
@@ -195,8 +214,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Cloud & DevOps</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Cloud & DevOps</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Oracle Cloud">
                                 <img src="{{ url_for('static', filename='imgs/oracle.png') }}" alt="oracle">
@@ -216,8 +237,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Business Intelligence</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Business Intelligence</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Power BI">
                                 <img src="{{ url_for('static', filename='imgs/powerbi.png') }}" alt="powerbi">
@@ -228,8 +251,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Operating System</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Operating System</p>
+                        </div>
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Linux">
                                 <img src="{{ url_for('static', filename='imgs/linux.png') }}" alt="linux">
@@ -240,8 +265,10 @@
                         </div>
                     </div>
                     
-                    <div>
-                        <p>Spreadsheet</p>
+                    <div class="technologiesContainer">
+                        <div class="technologiesText">
+                            <p>Spreadsheet</p>
+                        </div> 
                         <div class="technologiesImage">
                             <div class="tooltip" data-alt="Excel">
                                 <img src="{{ url_for('static', filename='imgs/excel.png') }}" alt="excel">

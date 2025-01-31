@@ -127,7 +127,7 @@ main .introduction {
         max-height: 40%;
     }
 
-    .introductionText {
+    .introduction {
         width: 100%;
     }
 
@@ -150,9 +150,8 @@ main .introduction {
     }
 
     .careerOverview,
-    .educationalBackground {
-        width: 150%;      
-        font-size: 2.3vw;      
+    .educationalBackground { 
+        font-size: 2.2vw;      
     }
 
     .textDetails {

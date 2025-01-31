@@ -95,7 +95,7 @@ main .introduction {
 .introduction .introductionText {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     text-align: center;
 }
 
@@ -144,7 +144,7 @@ main .introduction {
     opacity:1.0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .book, 
     .pencil {
         width: 100%; 
@@ -154,6 +154,10 @@ main .introduction {
     }
 
     .introduction {
+        width: 100%;
+    }
+
+    .introductionText {
         width: 100%;
     }
 
@@ -172,12 +176,12 @@ main .introduction {
         flex-direction: row; 
         align-items: center;    
         justify-content: center;
-        gap: 2px;             
     }
 
     .careerOverview,
     .educationalBackground { 
-        font-size: 2.2vw;      
+        width: 100%;
+        font-size: 2.3vw;      
     }
 
     .textDetails {

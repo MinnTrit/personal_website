@@ -139,7 +139,7 @@ main .technicalKnowledge {
     visibility: visible;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .technicalBox {
         width: 80%;
         display: flex;

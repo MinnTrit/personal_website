@@ -22,7 +22,6 @@ main .technicalKnowledge {
     }
 }
 
-
 .technicalBox {
     display: flex;
     flex-direction: column; 
@@ -60,7 +59,6 @@ main .technicalKnowledge {
     justify-content: space-evenly;
     border: 5px solid #0e1111;
     border-radius: 10px;
-    padding-top: 5px;
 }
 
 .technicalBox .technologies > div {
@@ -76,6 +74,7 @@ main .technicalKnowledge {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-left: 20px;
     width: 30%;
     max-width: 50%;
 }
@@ -140,7 +139,7 @@ main .technicalKnowledge {
     visibility: visible;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
     .technicalBox {
         width: 80%;
         display: flex;

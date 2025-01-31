@@ -109,16 +109,42 @@ main .introduction {
 .careerOverview {
     width: 50%;
     border: 3px solid #0e1111;
+    font-size: 1.02vw;
     border-radius: 5px;
 }
 
 .educationalBackground {
     width: 50%;
     border: 3px solid #0e1111;
+    font-size: 1.02vw;
     border-radius: 5px;
 }
 
-@media (max-width: 400px) {
+/* Sytling the information div */
+.introduction .information {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.introduction .information img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid;
+    border-color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.introduction .information img:hover {
+    transform: scale(1.2);
+    opacity:1.0;
+}
+
+@media (max-width: 1000px) {
     .book, 
     .pencil {
         width: 100%; 
@@ -157,29 +183,5 @@ main .introduction {
     .textDetails {
         height: auto;        
     }
-}
-
-/* Sytling the information div */
-.introduction .information {
-    margin-top: 20px;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 20px; 
-}
-
-.introduction .information img {
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    border: 1px solid;
-    border-color: white;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-}
-
-.introduction .information img:hover {
-    transform: scale(1.2);
-    opacity:1.0;
 }
 

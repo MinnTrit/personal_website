@@ -73,7 +73,16 @@ main .highlights {
     color: #f1abb9; 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
+    main .highlights {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #88CFF1;
+        margin-top: 35vh; 
+    }
+
     .expertise  {
         display: flex;
         flex-direction: row;

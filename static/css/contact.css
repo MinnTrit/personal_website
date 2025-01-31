@@ -4,13 +4,13 @@ main .contact {
     align-items: center;
     width: 100%;
     height: 100%; 
-    margin-top: 50px; 
     background-color: #88CFF1;
+    margin-bottom: 0;
 }
 
-.contact .contactInformation {
+.contact .contactInformation {  
     width: 100%;
-    height: 50px; 
+    height: 60%; 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,7 +34,11 @@ main .contact {
     max-height: 40px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
+    main .contact {
+        margin-bottom: -40;
+    }
+
     .phone, 
     .email {
         display: flex;

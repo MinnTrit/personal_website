@@ -460,8 +460,7 @@
                 const targetElement = document.getElementById(targetId);
     
                 // Smoothly scroll to the target element
-                window.scrollTo({
-                    top: targetElement.offsetTop,
+                targetElement.scrollIntoView({
                     behavior: 'smooth'
                 });
             });

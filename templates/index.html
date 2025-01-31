@@ -18,10 +18,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-item"><a class="about" href="#">About</a></div>
-            <div class="nav-item"><a class="skills" href="#">Skills</a></div>
-            <div class="nav-item"><a class="projects" href="#">Projects</a></div>
-            <div class="nav-item"><a class="contact" href="#">Contact</a></div>
+            <div class="nav-item"><a class="about" href="#aboutMe">About</a></div>
+            <div class="nav-item"><a class="skills" href="#skillSections">Skills</a></div>
+            <div class="nav-item"><a class="projects" href="#personalProjects">Projects</a></div>
+            <div class="nav-item"><a class="contact" href="#contact">Contact</a></div>
         </nav>
     </header>
     <main>
@@ -446,29 +446,6 @@
         </div>
 
     </main>
-    <header>
-        <nav class="navbar">
-            <div class="nav-item"><a class="about" href="#aboutMe">About</a></div>
-            <div class="nav-item"><a class="skills" href="#skillSections">Skills</a></div>
-            <div class="nav-item"><a class="projects" href="#personalProjects">Projects</a></div>
-            <div class="nav-item"><a class="contact" href="#contact">Contact</a></div>
-        </nav>
-    </header>
-    
-    <!-- Add your sections for smooth scrolling -->
-    <section id="aboutMe">
-        <!-- About content -->
-    </section>
-    <section id="skillSections">
-        <!-- Skills content -->
-    </section>
-    <section id="personalProjects">
-        <!-- Projects content -->
-    </section>
-    <section id="contact">
-        <!-- Contact content -->
-    </section>
-    
     <script>
         // Get all anchor links inside the navbar
         const navLinks = document.querySelectorAll('.navbar a');
@@ -490,6 +467,5 @@
             });
         });
     </script>
-    
 </body>
 </html>
